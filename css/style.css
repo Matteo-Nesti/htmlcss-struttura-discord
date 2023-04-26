@@ -21,16 +21,30 @@ main > :nth-child(even) {
     background: #CCC;
 }
 
+footer {
+    background-color: #23272a;
+}
+
 /* utility */
 
 .display-flex {
     display: flex;
 }
 
-.align-contents {
-    justify-content: center;
+.space-between {
+    justify-content: space-between;
+}
+
+.align-items {
     align-items: center;
 }
+
+.justify-content {
+
+    justify-content: center;
+
+}
+
 
 .container {
     width: 1080px;
@@ -98,3 +112,34 @@ contenuto rappresentativo diverso */
     background-color: darkgreen;
     border: 2px dashed black;
 }
+
+/* footer */
+
+.social-link-column {
+    min-height: 500px;
+    width: calc(100% / 3);
+    background-color: lightcoral;
+    border: 2px dashed black;
+}
+
+.help-link-column {
+    min-height: 500px;
+    width: calc(100% / 3 * 2);
+    background-color: lightseagreen;
+    border: 2px dashed black;
+}
+
+.link {
+    width: 100%;
+    border: 2px dashed white; 
+}
+
+footer section {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.ending-row {
+    height: 100px;
+    background-color: greenyellow;
+}
+
