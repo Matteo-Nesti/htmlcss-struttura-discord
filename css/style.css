@@ -95,14 +95,14 @@ contenuto rappresentativo diverso */
 
 .large-column {
     min-height: 300px;
-    width: 70%;
+    flex-basis: 70%;
     background-color: pink;
     border: 2px dashed black;
 }
 
 .small-column {
     min-height: 300px;
-    width: 30%;
+    flex-basis: 30%;
     background-color: aquamarine;
     border: 2px dashed black;
 }
@@ -117,20 +117,20 @@ contenuto rappresentativo diverso */
 
 .social-link-column {
     min-height: 500px;
-    width: calc(100% / 3);
+    flex-basis: calc(100% / 3);
     background-color: lightcoral;
     border: 2px dashed black;
 }
 
 .help-link-column {
     min-height: 500px;
-    width: calc(100% / 3 * 2);
+    flex-basis: calc(100% / 3 * 2);
     background-color: lightseagreen;
     border: 2px dashed black;
 }
 
 .link {
-    width: 100%;
+    flex-basis: 100%;
     border: 2px dashed white; 
 }
 
