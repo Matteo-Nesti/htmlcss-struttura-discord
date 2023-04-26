@@ -7,14 +7,18 @@
 
 /* custom properties */
 :root{
+    --m-p: 30px;
 
 }
 
 /* generics */
 
 header {
-    height: 100px;
     background-color: aqua;
+}
+
+main > :nth-child(even) {
+    background: #CCC;
 }
 
 /* utility */
@@ -30,8 +34,8 @@ header {
 
 .container {
     width: 1080px;
-    height: 100%;
     margin: 0 auto;
+    padding: var(--m-p)
 }
 
 
@@ -62,13 +66,35 @@ contenuto rappresentativo diverso */
 }
 
 .spotlight-container {
-    height: 400px;
     background-color: rgb(28, 28, 124);
+    padding: var(--m-p)
 }
 
 .spotlight {
     border: 2px dashed black;
     background-color: blueviolet;
-    height: 80%;
-    width: 40%;
+    min-height: 400px;
+    width: 800px;
+}
+
+/* main */ 
+
+.large-column {
+    min-height: 300px;
+    width: 70%;
+    background-color: pink;
+    border: 2px dashed black;
+}
+
+.small-column {
+    min-height: 300px;
+    width: 30%;
+    background-color: aquamarine;
+    border: 2px dashed black;
+}
+
+.single-column {
+    min-height: 600px;
+    background-color: darkgreen;
+    border: 2px dashed black;
 }
